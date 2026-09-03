@@ -15,6 +15,7 @@ class IrisAcousticStreamer {
         private const val SAMPLE_RATE = 44100
         private const val CHANNEL_CONFIG = AudioFormat.CHANNEL_IN_MONO
         private const val AUDIO_FORMAT = AudioFormat.ENCODING_PCM_16BIT
+        private const val TAG = "IrisAcousticStreamer"
     }
 
     private val isRecording = AtomicBoolean(false)
@@ -75,9 +76,5 @@ class IrisAcousticStreamer {
         } catch (e: Exception) {
             Log.e(TAG, "Error stopping AudioRecord", e)
         }
-    }
-
-    companion object {
-        private const val TAG = "IrisAcousticStreamer"
     }
 }
