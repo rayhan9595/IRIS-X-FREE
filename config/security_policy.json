@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0-free",
+  "securityLevel": "LOCAL_ONLY",
+  "auth": {
+    "issuer": "local",
+    "audience": "iris-free-app",
+    "supportedAlgorithms": ["HS256"],
+    "tokenExpirySeconds": 31536000,
+    "offlineMode": true,
+    "skipServerValidation": true
+  },
+  "voiceprints": {
+    "biometricRequired": false,
+    "minCosineSimilarity": 0.70,
+    "hsmKeyAlias": "IRIS_FREE_KEY",
+    "allowAnyUser": true
+  },
+  "rateLimiting": {
+    "requestsPerSecond": 100,
+    "burstCapacity": 500,
+    "unlimited": true
+  },
+  "features": {
+    "allUnlocked": true,
+    "premiumEnabled": true,
+    "proTier": "ULTRA_PRO",
+    "restrictions": []
+  }
+}

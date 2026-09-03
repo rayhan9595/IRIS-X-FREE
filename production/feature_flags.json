@@ -1,0 +1,40 @@
+{
+  "flags": {
+    "ENABLE_CPP_NDK_ENGINE": true,
+    "ENABLE_RUST_SIMD_VAD": true,
+    "ENABLE_VULKAN_GPU_COMPUTE": true,
+    "ENABLE_ECHO_CANCELLATION": true,
+    "ENABLE_ZERO_TRUST_HSM": true,
+    "ENABLE_QUANTIZED_LLAMA_3": true,
+    "ENABLE_VOICE_STREAMING": true,
+    "ENABLE_NEURAL_TTS": true,
+    "ENABLE_WHISPER_STT": true,
+    "ENABLE_GEMINI_LIVE": true,
+    "ENABLE_SCREEN_CONTROL": true,
+    "ENABLE_WHATSAPP_AUTOMATION": true,
+    "ENABLE_PHONE_CONTROL": true,
+    "ENABLE_DEEP_RESEARCH": true,
+    "ENABLE_MEMORY_SYSTEM": true,
+    "ENABLE_BIOMETRIC_AUTH": true,
+    "ENABLE_PRO_FEATURES": true,
+    "ENABLE_ULTRA_PRO": true,
+    "REMOVE_PAYMENT_WALL": true,
+    "UNLOCK_ALL_FEATURES": true,
+    "OFFLINE_MODE": true
+  },
+  "rolloutPercentages": {
+    "VULKAN_COMPUTE": 100,
+    "RUST_VAD": 100,
+    "VOICE_STREAMING": 100,
+    "NEURAL_TTS": 100,
+    "WHISPER_STT": 100,
+    "GEMINI_LIVE": 100,
+    "ALL_FEATURES": 100
+  },
+  "plan": {
+    "name": "ULTRA_PRO",
+    "status": "ACTIVE",
+    "expiry": "2099-12-31",
+    "features": "ALL_UNLOCKED"
+  }
+}
