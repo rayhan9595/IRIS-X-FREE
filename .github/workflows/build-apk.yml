@@ -29,6 +29,10 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Generate debug keystore
+        run: |
+          keytool -genkeypair -v -keystore android/app/debug.keystore -alias androiddebugkey -keyalg RSA -keysize 2048 -validity 10000 -storepass android -keypass android -dname "CN=Android Debug,O=Android,C=US"
+
       - name: Make gradlew executable
         run: chmod +x android/gradlew
 
@@ -56,9 +60,9 @@ jobs:
           tag_name: v1.0-free
           name: IRIS-X FREE ULTRA PRO
           body: |
-            🎉 IRIS-X Free ULTRA PRO - All Features Unlocked!
+            IRIS-X Free ULTRA PRO - All Features Unlocked!
             
-            ✅ Features:
+            Features:
             - Voice Streaming
             - Neural TTS  
             - Whisper STT
@@ -70,7 +74,7 @@ jobs:
             - Memory System
             - All Premium Features
             
-            🔓 No payment required | Free forever
+            No payment required - Free forever
           files: ${{ steps.find-apk.outputs.apk_path }}
           draft: false
           prerelease: false
